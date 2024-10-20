@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="../img/logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyStartMarket.Ge</title>
+</head>
+<body>
+    
+    <div id="header">
+        <div id="logo">
+        
+        </div>
+    
+        <div id="nav">
+            <ul>
+
+                 <li><a href="../index.html"><img src="../img/purepng.com-home-iconsymbolsiconsapple-iosiosios-8-iconsios-8-721522596056wkxtr.png"height="45px" ></a></li>
+                 <li><a href="../info/index.html"><img src="../img/3357329.png"height="45px" ></a></li>
+                 <li><a href="../dev/index.html"><img src="../img/6840478.png"height="45px" ></a></li>
+                 <li><a href="../mewarme/index.html"><img src="../img/reverse-arrows-icon-491x512-6h045vub.png"height="40px" ></a></li>
+                 <li><a href="../kalata/index.html"><img src="../img/basket-cart-icon-27.png" height="50px"></a></li>
+                 <li><a href="../chatbot.html"><img src="https://static.thenounproject.com/png/1156284-200.png" height="50px"></a></li>
+                 <li><a href="#"><img src="../img/Sample_User_Icon.png" height="60px"></a>
+                    <ul>
+                 <li id="active2"><a href="../registracia/index.html">რეგისტრაცია</a></li>
+                 <li><a href="../shesvla/index.html">შესვლა</a></li>
+                    </ul>
+                 </li>   
+
+                
+                 
+            
+            </ul>
+        </div>
+    
+    </div>
+    <style>
+      
+      .registration-container {
+          background-color: white;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+          width: 500px;
+          height: 500px;
+          margin-left: 67%;
+          
+      }
+      h2 {
+          text-align: center;
+      }
+      input, select {
+          display: block;
+          width: 100%;
+          padding: 10px;
+          margin: 10px 0;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          box-sizing: border-box;
+      }
+      button {
+          width: 100%;
+          padding: 10px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+      button:hover {
+          background-color: #45a049;
+      }
+      .social-registration {
+          margin-top: 20px;
+          text-align: center;
+      }
+      .social-btn {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          margin: 0 10px;
+          background-size: cover;
+          cursor: pointer;
+      }
+      .facebook { background-image: url('https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/facebook.svg'); }
+      .google { background-image: url('https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/google.svg'); }
+      .twitter { background-image: url('https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/twitter.svg'); }
+  </style>
+</head>
+<body>
+  <div class="registration-container">
+      <h2>რეგისტრაცია</h2>
+      <form id="registrationForm">
+          <input type="text" id="firstName" placeholder="სახელი" required>
+          <input type="text" id="lastName" placeholder="გვარი" required>
+          <input type="email" id="email" placeholder="ელ-ფოსტა" required>
+          <input type="tel" id="phone" placeholder="ტელეფონის ნომერი" required>
+          <select id="userType" required>
+              <option value="">აირჩიეთ მომხმარებლის ტიპი</option>
+              <option value="entrepreneur">მეწარმე</option>
+              <option value="developer">დეველოპერი</option>
+              <option value="startup">სტარტაპერი</option>
+              <option value="smallBusiness">მცირე ბიზნესი</option>
+              <option value="mediumBusiness">საშუალო ბიზნესი</option>
+          </select>
+          <input type="password" id="password" placeholder="პაროლი" required>
+          <button type="submit">რეგისტრაცია</button>
+      </form>
+      <div class="social-registration">
+          <div class="social-btn facebook" onclick="socialRegistration('facebook')"></div>
+          <div class="social-btn google" onclick="socialRegistration('google')"></div>
+          <div class="social-btn twitter" onclick="socialRegistration('twitter')"></div>
+      </div>
+  </div>
+
+  <script>
+      document.getElementById('registrationForm').addEventListener('submit', function(e) {
+          e.preventDefault();
+          const firstName = document.getElementById('firstName').value;
+          const lastName = document.getElementById('lastName').value;
+          const email = document.getElementById('email').value;
+          const phone = document.getElementById('phone').value;
+          const userType = document.getElementById('userType').value;
+          const password = document.getElementById('password').value;
+          
+          console.log('რეგისტრაციის მონაცემები:', { firstName, lastName, email, phone, userType, password });
+          // აქ უნდა დაამატოთ სერვერზე მონაცემების გაგზავნის ლოგიკა
+      });
+
+      function socialRegistration(platform) {
+          console.log(`${platform}-ით რეგისტრაცია`);
+          // აქ უნდა დაამატოთ სოციალური ქსელით რეგისტრაციის ლოგიკა
+          // ეს შეიძლება მოიცავდეს OAuth-ის გამოყენებას ან სხვა მეთოდს
+      }
+  </script>
+</body>
+</html>
