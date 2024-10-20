@@ -1,0 +1,146 @@
+/*CSS Document*/
+
+body {
+    background: rgba(49,137,144,255);
+  }
+  
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+#header div ul li {
+    float: left;
+    list-style: none;
+}
+
+
+
+#nav {
+    margin-left:45%;
+}
+
+#nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color:rgb(94, 216, 94);;
+    background-color: rgb(94, 216, 94);
+    width: 140px;
+    line-height: 60px;
+    height: 60px;
+    transition: 0.5s background-color;
+}
+
+#nav ul li a:hover {
+    background-color: yellow;
+    box-shadow: inset 0px 0px 5px 2px #000;
+}
+
+#logo {
+    padding-bottom: 60px;
+    position: absolute;
+    width: 100%;
+    background-color:rgb(94, 216, 94);;
+    z-index: -1;
+    height: 30px;
+}
+
+
+#active a {
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+#active2 a {
+    border-left: 3px soild rgb(201, 69, 69);
+}
+
+#nav ul ul {
+    position: absolute;
+    width: 200px;
+    z-index: 99;
+}
+
+#nav ul ul li {
+    display: none;
+}
+
+#nav ul li:hover ul li {
+    display: block;
+}
+
+#nav ul ul li a {
+    border-bottom: 2px solid rgb(0, 229, 255);
+    background-color: #002a85;
+    display: inline-block;
+    padding: 0px;
+    width: 160px;
+    text-align: center;
+}
+
+#slider img {
+    margin-top:9%px;
+    width: 100%;
+    
+}
+#text {
+    position: absolute;
+    width: auto;
+    top: 100px;;
+    left: 0px;;
+    color:white;
+}
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+  #log {
+    position:absolute;
+    top:200px;
+    left:50px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the search field */
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid rgb(0, 0, 0);
+    float: left;
+    width: 30%;
+    background: #f1f1f1;
+    margin-top:-55px;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 10%;
+    padding: 20px;
+    background: #2196F3;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+    margin-top: -55px;
+    margin-left: 460px;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
