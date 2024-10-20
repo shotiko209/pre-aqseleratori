@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="../img/logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css"  href="../css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyStartMarket.Ge</title>
+</head>
+<body>
+    
+    <div id="header">
+        <div id="logo">
+        
+     </div>
+    
+        <div id="nav">
+            <ul>
+
+                 <li><a href="../index.html"><img src="../img/purepng.com-home-iconsymbolsiconsapple-iosiosios-8-iconsios-8-721522596056wkxtr.png"height="45px" ></a></li>
+                 <li><a href="../info/index.html"><img src="../img/3357329.png"height="45px" ></a></li>
+                 <li><a href="../dev/index.html"><img src="../img/6840478.png"height="45px" ></a></li>
+                 <li><a href="../mewarme/index.html"><img src="../img/reverse-arrows-icon-491x512-6h045vub.png"height="40px" ></a></li>
+                 <li><a href="../kalata/index.html"><img src="../img/basket-cart-icon-27.png" height="50px"></a></li>
+                 <li><a href="../chatbot.html"><img src="https://static.thenounproject.com/png/1156284-200.png" height="50px"></a></li>
+                 <li><a href="#"><img src="../img/Sample_User_Icon.png" height="60px"></a>
+                    <ul>
+                 <li><a href="../registracia/index.html">რეგისტრაცია</a></li>
+                 <li id="active2"><a href="../shesvla/index.html">შესვლა</a></li>
+                    </ul>
+                 </li>   
+
+                
+                 
+            
+            </ul>
+        </div>
+    
+    </div>
+    
+   
+</head>
+<body>
+  <div class="login-container">
+      <h2>შესვლა</h2>
+      <form id="loginForm">
+          <input type="email" id="email" placeholder="ელ-ფოსტა" required>
+          <input type="password" id="password" placeholder="პაროლი" required>
+          <button type="submit" >შესვლა</button>
+      </form>
+      <div class="social-login">
+          <div class="social-btn facebook" onclick="socialLogin('facebook')"></div>
+          <div class="social-btn google" onclick="socialLogin('google')"></div>
+          <div class="social-btn twitter" onclick="socialLogin('twitter')"></div>
+      </div>
+  </div>
+
+  <script>
+      document.getElementById('loginForm').addEventListener('submit', function(e) {
+          e.preventDefault();
+          const email = document.getElementById('email').value;
+          const password = document.getElementById('password').value;
+          console.log('ტრადიციული შესვლა:', { email, password });
+          // აქ უნდა დაამატოთ სერვერთან აუთენტიფიკაციის ლოგიკა
+      });
+
+      function socialLogin(platform) {
+          console.log(`${platform}-ით შესვლა`);
+          // აქ უნდა დაამატოთ სოციალური ქსელით შესვლის ლოგიკა
+          // ეს შეიძლება მოიცავდეს OAuth-ის გამოყენებას ან სხვა მეთოდს
+      }
+  </script>
+</body>
+</html>
